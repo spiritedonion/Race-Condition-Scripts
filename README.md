@@ -4,11 +4,10 @@
 
  ### How to Configure
 
-1. In Burp Suite:
-   - Capture a legitimate OTP request
-   - Right-click → "Convert to Turbo Intruder attack"
-   - Replace the OTP value with `%s` in the body
-   - Add/Modify the `X-Forwarded-For` header to use `%s`
+1. In Burp Suite Capture a legitimate OTP request
+2. Right-click → "Convert to Turbo Intruder attack"
+3. Replace the OTP value with `%s` in the body
+4. Add/Modify the `X-Forwarded-For` header to use `%s`
 
 Example request template:
 
@@ -70,6 +69,9 @@ def handleResponse(req, interesting):
 
 ```
 ### Request Structure
+### Flowchart:
+
+![Flowchart](https://raw.githubusercontent.com/spiritedonion/Race-Condition-Scripts/refs/heads/main/Race%20Condition.png)
 
 The script generates requests with:
 
