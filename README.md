@@ -1,6 +1,4 @@
-# Race-Condition-Scripts
-
-## OTP Brute-Force with IP Rotation (Race Condition Exploit)
+# OTP Brute-Force with IP Rotation (Race Condition Exploit)
 
  ### How to Configure
 
